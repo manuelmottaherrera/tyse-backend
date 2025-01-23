@@ -1,0 +1,6 @@
+{
+  "java.test.config": {
+    "name": "myTestConfiguration",
+    "vmArgs": ["-XX:+AllowRedefinitionToAddDeleteMethods"]
+  }
+}
