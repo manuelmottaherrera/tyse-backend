@@ -990,6 +990,16 @@
             <build>
                 <pluginManagement>
                     <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-compiler-plugin</artifactId>
+                            <configuration>
+                                <testExcludes>
+                                    <testExclude>
+                                        com/tyse/tysebackend/config/PostgreSqlTestContainer.java</testExclude>
+                                </testExcludes>
+                            </configuration>
+                        </plugin>
                         <!--
                             This plugin's configuration is used to store Eclipse m2e settings only.
                             It has no influence on the Maven build itself.
